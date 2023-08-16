@@ -2,7 +2,7 @@ import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify'
 import * as knex from 'knex'
 import * as crypto from 'crypto'
 export default async function login(fastify: FastifyInstance) {
-
+  /******/
   fastify.post('/', async (request: FastifyRequest, reply: FastifyReply) => {
     const body: any = request.body
     const username: any =body.username
