@@ -1,33 +1,16 @@
-# Fastify & Typescript App
 
-> Fastify & TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm run install
 ```
-# roshan.pandey@capco.com
-## Usage
+# How To run project
 
-### Development
-```bash
-# Required: typescript watch compilation
-$ npm run watch
+- Run `taskkill /f /im node.exe `
+# install project
+- Run `npm install`  or Run `npm i ` 
 
-# Required: development server with hot reload (nodemon)
-$ npm run dev
+# task kill on Windows10 OS
+- Run `netstat -an taskkill /f /im node.exe`  
+# Development server
+- Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
 
-# Format with prettier
-$ npm run format
-```
-
-### Production
-
-```bash
-# build for production
-$ npm run build
-
-# start production app
-$ npm run start
-```
+## Development server on Build
+# Build Source Code on production
+- Run `npx gulp`
