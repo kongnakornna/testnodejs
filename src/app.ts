@@ -1,14 +1,19 @@
-import fastify from "fastify";
-
-import fp from 'fastify-plugin';
-
-import router from "./router";
-const server = fastify({
-  // Logger only for production
-  logger: !!(process.env.NODE_ENV !== "development"),
-});
-
-// Middleware: Router
-server.register(router);
-
-export default server;
+import * as fastify from 'fastify'
+import * as path from 'path'
+const multer = require('fastify-multer')
+const envPath = path.join(__dirname, '../config.conf')
+require('dotenv').config({ path: envPath })
+import routers from './router'
+const app: fastify.FastifyInstance = fastify.fastify({
+  logger: {
+    level: 'info'
+  }
+})
+app.register(multer.contentParser)
+app.register(require('fastify-cors'))
+app.register(require('fastify-formbody'))
+app.register(require('./plugins/jwt'), {
+  secret: process.env.JWT_SECRET || '$#200011124441##@'
+})
+app.register(routers)
+export default app

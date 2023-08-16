@@ -1,5 +1,13 @@
 {
-  "watch": ["dist"],
-  "ext": "js",
-  "exec": "node -r tsconfig-paths/register dist/index.js"
+  "verbose": true,
+  "ignore": [
+    "*.js",
+    "views/*",
+    "public/*"
+  ],
+  "watch": [
+    "src"
+  ],
+  "ext": "ts",
+  "exec": "npx ts-node -P tsconfig.json -r ./src/server.ts"
 }
