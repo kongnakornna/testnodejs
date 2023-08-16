@@ -16,13 +16,13 @@
 # Build Source Code on production
 - Run `npx gulp`
 
+# POST API
+
+## http://127.0.0.1:8880/login
+- username:admin
+- password:admin
 
 
-http://127.0.0.1:8880/login
-username:admin
-password:admin
-
-
-http://127.0.0.1:8880/login/verifytoken
+## http://127.0.0.1:8880/login/verifytoken
 
 token
