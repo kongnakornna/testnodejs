@@ -8,9 +8,21 @@
 
 # task kill on Windows10 OS
 - Run `netstat -an taskkill /f /im node.exe`  
+
 # Development server
 - Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
 
 ## Development server on Build
 # Build Source Code on production
 - Run `npx gulp`
+
+
+
+http://127.0.0.1:8880/login
+username:admin
+password:admin
+
+
+http://127.0.0.1:8880/login/verifytoken
+
+token
