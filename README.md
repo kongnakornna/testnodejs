@@ -7,7 +7,7 @@
 ##  email kongnakornjantakun@gmail.com
 
 ##  Mobile. +66955088091
-# install project
+## install project
 - Run `npm install`  and  Run `npm install -g nodemon`
 ##  How To run project Development server
 - Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
