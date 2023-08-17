@@ -1,5 +1,4 @@
 ##   Name: Test NODEJS fastify typescript
-
 ##  port : 8880
 ## nodejs v18.12.1
 
@@ -18,7 +17,7 @@
 - Run `npx nodemon `
 
 
-```
+``````
 # How To run project
 # Development server
 - Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
@@ -34,8 +33,6 @@
 # How To run project
 - Run `npx nodemon `
 
-
-
 - Run `taskkill /f /im node.exe `
 # install project
 
@@ -43,23 +40,18 @@
 
 # task kill on Windows10 OS
 - Run `netstat -an taskkill /f /im node.exe`  
-```
+``````
 ## Test PostMan
-
-```
+``````
 - http://127.0.0.1:8880
 
 - http://127.0.0.1:8880/login   
-
 - username: admin
 - password :admin
 
 - http://127.0.0.1:8880/login/verifytoken
-
 - token_bearer
 
 - http://127.0.0.1:8880/login/private
-
 - token_bearer
-
-```
+``````
