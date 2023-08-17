@@ -38,7 +38,7 @@ export default async function login(fastify: FastifyInstance) {
                     expiresIn('-1h')     // -3600000
                     expiresIn('-200')    // -200
         */
-        reply.code(200).send({token,statusCode: 200,ok: true, message: 'Welcome',response:{data:token}})
+        reply.code(200).send({statusCode: 200,ok: true, message: 'Welcome',token,response:{data:user}})
       } else { 
         reply.code(401).send({ statusCode: 401,ok: false, message: 'Error username or password incorrect',response:{data:null}})
       }
