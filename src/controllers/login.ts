@@ -51,4 +51,10 @@ export default async function login(fastify: FastifyInstance) {
     return  // exit process     
   })
   /*****/
+  fastify.get('/jwt/private', {
+    preValidation: [fastify.authenticate]/*ตรวจสอบ Tokem*/
+  }, async (request: FastifyRequest, reply: FastifyReply) => {
+    reply.send({ message: "Protected area!" })
+  })
+  /*****/
 }
