@@ -27,6 +27,8 @@
 # directory Build file ` dist/server.ts`
 
 # How To run project
+- Run `npx nodemon `
+
 # install project
 - Run `npm install`  and  Run `npm install -g nodemon`
 
