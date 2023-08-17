@@ -1,7 +1,7 @@
  
 # Name: Test NODEJS fastify typescript
 # port : 8880
-## nodejs v 16.16.0
+## nodejs v18.12.1
 
 ##  Author Kongnakorn Jantakun
 ##  email kongnakornna@gmail.com
