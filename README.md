@@ -11,15 +11,6 @@
 ```
 
 # How To run project
-# taskkill /f /im node.exe
-# 
-- Run `taskkill /f /im node.exe `
-# install project
-
-- Run `npm install`  or Run `npm i ` 
-
-# task kill on Windows10 OS
-- Run `netstat -an taskkill /f /im node.exe`  
 
 # Development server
 
@@ -40,6 +31,13 @@
 - Run `npm install`  and  Run `npm install -g nodemon`
 
 
+- Run `taskkill /f /im node.exe `
+# install project
+
+- Run `npm install`  or Run `npm i ` 
+
+# task kill on Windows10 OS
+- Run `netstat -an taskkill /f /im node.exe`  
 
 # Test PostMan
 
