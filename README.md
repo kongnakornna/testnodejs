@@ -7,13 +7,20 @@
 ##  email kongnakornjantakun@gmail.com
 
 ##  Mobile. +66955088091
+# install project
+- Run `npm install`  and  Run `npm install -g nodemon`
+##  How To run project Development server
+- Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
+
+##  Directory Build file ` dist/server.ts`
+
+##  How To run  Build project
+- Run `npx nodemon `
+
 
 ```
-
 # How To run project
-
 # Development server
-
 - Run `npx nodemon ` for a dev server.  OR  Run `npx ts-node -P tsconfig.json src/server.ts `
 
 ## Development server on Build
@@ -27,8 +34,6 @@
 # How To run project
 - Run `npx nodemon `
 
-# install project
-- Run `npm install`  and  Run `npm install -g nodemon`
 
 
 - Run `taskkill /f /im node.exe `
