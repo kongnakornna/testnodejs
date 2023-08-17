@@ -1,7 +1,7 @@
 {
   "name": "fastify-basic",
   "version": "1.0.0",
-  "description": "",
+  "description": "NODEJS fastify typescript ",
   "main": "index.js",
   "scripts": {
     "build": "tsc -P tsconfig.json",
