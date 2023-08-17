@@ -35,6 +35,8 @@
 # Test PostMan
 
 ```
+- http://127.0.0.1:8880
+
 - http://127.0.0.1:8880/login   
 
 - username: admin
