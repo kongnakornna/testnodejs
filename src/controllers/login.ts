@@ -1,9 +1,9 @@
 import { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify'
 import * as knex from 'knex'
 import * as crypto from 'crypto'
+import singinSchema from '../schemas/singin' 
 export default async function login(fastify: FastifyInstance) {
-  /******/
-  fastify.post('/', async (request: FastifyRequest, reply: FastifyReply) => {
+  fastify.post('/',{schema: singinSchema},  async (request: FastifyRequest, reply: FastifyReply) => {
     const body: any = request.body
     const username: any =body.username
     const password : any = body.password
@@ -48,7 +48,6 @@ export default async function login(fastify: FastifyInstance) {
     }
 
   })
-  /******/
   fastify.post('/verifytoken', {preValidation: [fastify.authenticate]/*ตรวจสอบ Tokem*/}, async (request: FastifyRequest, reply: FastifyReply) => {
     const headers: any = request.headers;           
     const body: any = request.body;   
@@ -73,11 +72,9 @@ export default async function login(fastify: FastifyInstance) {
     })
     return  // exit process     
   })
-  /*****/
   fastify.get('/private', {
     preValidation: [fastify.authenticate]/*ตรวจสอบ Tokem*/
   }, async (request: FastifyRequest, reply: FastifyReply) => {
     reply.code(200).send({ message: "Protected area!" })
   })
-  /*****/
 }

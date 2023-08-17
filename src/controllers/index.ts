@@ -3,6 +3,9 @@ export default async function index(fastify: FastifyInstance) {
   fastify.get('/', async (request: FastifyRequest, reply: FastifyReply) => {
    reply.code(200).send({statusCode: 200,  ok: true, message: "Hello world!" })
   })
+  fastify.post('/', async (request: FastifyRequest, reply: FastifyReply) => {
+    reply.code(200).send({statusCode: 200,  ok: true, message: "Hello world!" })
+   })
   fastify.get('/jwt/sign', async (request: FastifyRequest, reply: FastifyReply) => {
     const token = fastify.jwt.sign({
       firstName: 'kongnakorn',
@@ -40,5 +43,4 @@ export default async function index(fastify: FastifyInstance) {
       })
       return  // exit process     
   })
-  /*****/
 }
